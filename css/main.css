@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:500");
+@import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
+
+:root {
+  --mainBlue: #40acf1;
+  --transparentBlue: rgba(64, 172, 241, 0.7);
+  --mainBlack: #292f36;
+  --mainWhite: #ffffff;
+  --mainGrey: rgba(216, 214, 214);
+  --mainYellow: #e3b505;
+  --lightBlue: #c4faef;
+  --bgblue: #e4feff;
+  --lightGrey: #bdc3c7;
+  --azure: #91eae4;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  background-color: var(--mainWhite);
+}
+.navbar {
+  background-color: var(--azure);
+}
+.navbar-icon {
+  font-size: 2rem;
+  color: var(--mainWhite);
+}
+.navbar-toggler {
+  outline-color: var(--mainBlue) !important;
+}
+.nav-link {
+  color: var(--mainWhite);
+  text-transform: capitalize;
+}
+.nav-link:hover {
+  color: var(--mainBlue);
+}
+.nav-icon {
+  font-size: 2.5rem;
+  color: var(--mainWhite);
+  text-decoration: none !important;
+  transition-property: color;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+.nav-icon:hover {
+  color: var(--mainBlue);
+}
+h1 {
+  color: var(--mainWhite);
+  font-size: 3rem;
+}
+.about-description {
+  color: var(--mainBlack);
+  font-size: 2rem;
+}
+/*about section */
+.about-img__container {
+  position: relative;
+}
+.about-img__container::before {
+  content: "";
+  position: absolute;
+  top: -1.5rem;
+  left: -1.7rem;
+  width: 100%;
+  height: 100%;
+  outline: 0.4rem solid var(--mainBlue);
+  z-index: -1;
+  transition: all 1s linear;
+}
+.about-img__container:hover:before {
+  top: 0;
+  left: 0;
+}
+#tickets .banner-title,
+#about .banner-title {
+  color: var(--mainBlue);
+}
+
+#tickets .banner-title {
+  margin-bottom: 0;
+}
+
+li {
+  font-size: 2.5rem;
+  font-family: "Lobster", cursive;
+}
+
+.banner-title-news {
+  margin: 0;
+  color: var(--mainBlue);
+  font-size: 4rem;
+  font-family: "Lobster", cursive;
+}
+
+.banner-title {
+  color: var(--mainWhite);
+  font-size: 4rem;
+  font-family: "Lobster", cursive;
+}
+.card {
+  transition: all 0.3 linear;
+}
+.card:hover {
+  box-shadow: 0 10px 15px rgb(0, 0, 0);
+}
+.img-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.film-img {
+  transition: all 1s ease-in-out;
+}
+.img-container:hover .film-img {
+  transform: scale(1.1);
+}
+.card-typo {
+  color: var(--mainBlack);
+  font-size: 1rem;
+}
+.news-icon {
+  font-size: 4rem;
+  color: var(--mainBlue);
+  text-decoration: none !important;
+  transition-property: color;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+.news-icon:hover {
+  color: var(--azure);
+}
+.btn-primary {
+  background: var(--mainBlue);
+  border: #e6e5e5;
+}
+.ticket-img__container {
+  position: relative;
+}
+.ticket-img__container::before {
+  content: "";
+  position: absolute;
+  top: 1.5rem;
+  left: 1.7rem;
+  width: 100%;
+  height: 100%;
+  outline: 0.4rem solid var(--mainBlue);
+  z-index: -1;
+  transition: all 1s linear;
+}
+.ticket-img__container:hover:before {
+  top: 0;
+  left: 0;
+}
+.text-dark {
+  font-size: 1.5rem;
+}
+.bg-secondary {
+  background-color: #e6e5e5;
+}
+.text-white {
+  font-size: 1.5rem;
+}
+
+.img-small {
+  max-height: 210px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.btn-seats {
+  background-color: var(--mainBlue);
+  color: var(--mainWhite);
+}
+.btn-seats:hover {
+  background-color: var(--azure);
+  color: var(--mainBlue);
+}
+.btn-dates {
+  background: var(--azure);
+}
+#movies,
+#gallery,
+#footer {
+  background: #7f7fd5;
+}
+
+.row {
+  margin-top: 0;
+}
